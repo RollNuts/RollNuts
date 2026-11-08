@@ -4,13 +4,25 @@ I build developer tools and small web experiments, and write about AI, infrastru
 
 開発ツール・Webの実験・AIとインフラの考察を作っています。
 
-## Start here
+## Main projects / 主なプロジェクト
 
 | Project | What you can explore | Current status |
 | --- | --- | --- |
-| [Mihassei News / 未発生新聞](https://github.com/RollNuts/mihassei-news) | A fictional satire newspaper built with Python, static pages, and Cloudflare Workers. [Read it](https://veripsa.com) or build it locally. | Active project; local build needs no API credentials. |
 | [Veripsa Core](https://github.com/RollNuts/veripsa) | Content-free PR traffic control: structural references and decision state, without retained source or diff bodies. [Design boundary](https://github.com/RollNuts/veripsa/blob/main/docs/PRODUCT_FACTS.md#f-013-content-free-storage-boundary) · [Try local evaluation](https://github.com/RollNuts/veripsa/blob/main/docs/OFFLINE_EXAMPLE.md) · [日本語の再現手順](https://note.com/rollnuts/n/n8e700225687d). | Source-available; hosted GitHub App is suspended. |
-| [Technical notes / 技術記事](https://github.com/RollNuts/zenn-content) | [Published RSS implementation note](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site) plus 3 Japanese drafts on AI reliability, infrastructure, and product value. | 1 published technical article; 3 draft sources. |
+| [Mihassei News / 未発生新聞](https://github.com/RollNuts/mihassei-news) | A fictional satire newspaper built with Python, static pages, and Cloudflare Workers. [Read it](https://veripsa.com) or build it locally. | Active project; local build needs no API credentials. |
+
+## Technical writing / 技術記事
+
+[Zenn](https://zenn.dev/veripsa) — Japanese implementation notes on Python, RSS, and static sites.
+
+- [創作上の2031年をRSSに流さない――静的サイトで3つの日時を分ける](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site)
+- [Article sources](https://github.com/RollNuts/zenn-content) — maintained through Zenn's GitHub integration.
+
+## Reference repositories / 検証・参照用
+
+- [ai-pr-collision-lab](https://github.com/RollNuts/ai-pr-collision-lab) — historical PR-collision recordings and a local pricing-test fixture. Current engine development is in Veripsa Core.
+- [awesome-cli-coding-agents](https://github.com/RollNuts/awesome-cli-coding-agents) — reference fork. Current curation and submissions belong [upstream](https://github.com/bradAGI/awesome-cli-coding-agents).
+- [awesome-workspace-intelligence](https://github.com/RollNuts/awesome-workspace-intelligence) — contribution fork for an [upstream listing proposal](https://github.com/chistiq/awesome-workspace-intelligence/pull/2).
 
 Each repository's README explains how to get started, its limitations, and its usage rights.
 
