@@ -13,8 +13,9 @@ I build developer tools and small web experiments, and write about AI, infrastru
 
 ## Technical writing / 技術記事
 
-[Zenn](https://zenn.dev/veripsa) — Japanese implementation notes on Python, RSS, and static sites.
+[Zenn](https://zenn.dev/veripsa) — Japanese implementation and operations notes on Git, Python, RSS, and static sites.
 
+- [git branch --mergedに出ない取り込み済みブランチを見分ける――556本を整理した実例](https://zenn.dev/veripsa/articles/github-branch-cleanup-squash-556)
 - [創作上の2031年をRSSに流さない――静的サイトで3つの日時を分ける](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site)
 - [Article sources](https://github.com/RollNuts/zenn-content) — maintained through Zenn's GitHub integration.
 
