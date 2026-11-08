@@ -10,7 +10,7 @@ I build developer tools and small web experiments, and write about AI, infrastru
 | --- | --- | --- |
 | [Mihassei News / 未発生新聞](https://github.com/RollNuts/mihassei-news) | A fictional satire newspaper built with Python, static pages, and Cloudflare Workers. [Read it](https://veripsa.com) or build it locally. | Active project; local build needs no API credentials. |
 | [Veripsa Core](https://github.com/RollNuts/veripsa) | Pre-merge traffic signals for overlapping pull requests from humans and coding agents. Includes an offline evaluation command. | Source-available; hosted GitHub App is suspended. |
-| [AI, infrastructure & product notes](https://github.com/RollNuts/zenn-content) | Three Japanese essays on AI reliability, infrastructure constraints, and product value. | Draft article sources, readable on GitHub. |
+| [Technical notes / 技術記事](https://github.com/RollNuts/zenn-content) | [Published RSS implementation note](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site) plus 3 Japanese drafts on AI reliability, infrastructure, and product value. | 1 published technical article; 3 draft sources. |
 
 Each repository's README explains how to get started, its limitations, and its usage rights.
 
