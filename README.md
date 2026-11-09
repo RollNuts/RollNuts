@@ -23,7 +23,7 @@ Gitのclean merge、コードグラフ、履歴上の関連、統合後の実行
 
 ## Agent integration / AIから使う実験
 
-[Core → local MCP / Codex](https://github.com/RollNuts/zenn-content/tree/89fe0fe12258c827a9e7fc54cb12fc96401018de/examples/core-local-mcp) — a separate read-only adapter for a saved Tauri snapshot. SDK-only reproduction is model-free; optional Codex execution uses the signed-in account's allowance. [日本語の解説（Zenn）](https://zenn.dev/veripsa/articles/tauri-command-contract-graph) · [GitHub原稿](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md).
+[Core → local MCP / Codex](https://github.com/RollNuts/zenn-content/tree/df6d5c739f3f6c79f14ead14e275ad3e766f5cd9/examples/core-local-mcp) — a separate read-only adapter for a saved Tauri snapshot. SDK-only reproduction is model-free; optional Codex execution uses the signed-in account's allowance. [日本語の解説（Zenn）](https://zenn.dev/veripsa/articles/tauri-command-contract-graph) · [GitHub原稿](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md).
 
 ## Technical writing / 技術記事
 
