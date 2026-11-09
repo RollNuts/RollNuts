@@ -6,9 +6,9 @@ I build developer tools and turn personal projects into runnable examples and te
 
 ## Try the latest / まず試せるもの
 
-**Veripsa Core → local MCP（試作）** — Rustを変更する前に、同じTauriコマンドにつながるTypeScriptの確認先と曖昧さを調べる2ツールです。固定snapshotを使う、読み取り専用の実験です。
+**Veripsa Core → local MCP（試作）** — Rustを変更する前に、同じTauriコマンドにつながるTypeScriptの確認先と曖昧さを調べる2ツールです。固定snapshotを使う、読み取り専用の実験です。公式Tauri例のsnapshotをCodex CLIから照会し、解析が不完全な状態も保持することを確認しました。
 
-[コード・実行手順](https://github.com/RollNuts/zenn-content/tree/0477e7e786006dcdc1e6f3edf97916b21812fdb1/examples/core-local-mcp) · [日本語の解説（GitHub全文／Zenn公開待ち）](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md)
+[コード・実行手順](https://github.com/RollNuts/zenn-content/tree/89fe0fe12258c827a9e7fc54cb12fc96401018de/examples/core-local-mcp) · [日本語の解説（GitHub全文／Zenn公開待ち）](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md)
 
 ## Main projects / 主なプロジェクト
 
