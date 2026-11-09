@@ -27,10 +27,11 @@ Gitのclean merge、コードグラフ、履歴上の関連、統合後の実行
 
 ## Technical writing / 技術記事
 
-[Zenn](https://zenn.dev/veripsa) — Japanese implementation and operations notes on Git, Python, RSS, and static sites.
+[Zenn](https://zenn.dev/veripsa) — Japanese implementation, code-analysis, and operations notes on Git, Python, RSS, and static sites.
 
 [記事の更新をRSSで購読 / Subscribe via RSS](https://zenn.dev/veripsa/feed)
 
+- [Gitのコンフリクトを減らそうとしたら、コードグラフとCo-changeができた](https://zenn.dev/veripsa/articles/graph-cochange-review-benchmark) — 4つの合成例を、手元で実マージ・実行・採点する。
 - [git branch --mergedに出ない取り込み済みブランチを見分ける――556本を整理した実例](https://zenn.dev/veripsa/articles/github-branch-cleanup-squash-556)
 - [創作上の2031年をRSSに流さない――静的サイトで3つの日時を分ける](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site)
 - [Article sources](https://github.com/RollNuts/zenn-content) — maintained through Zenn's GitHub integration.
