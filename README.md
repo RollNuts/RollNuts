@@ -1,21 +1,29 @@
 # RollNuts
 
-I build developer tools and turn personal projects into runnable examples and technical notes.
+I use AI-assisted development to turn practical problems into developer tools, runnable examples, and inspectable technical notes.
 
-個人開発で作った仕組みを、実行できるコードと技術記事にしています。
+AIと進めた個人開発を、実行できるコード・検証記録・技術記事として残しています。
 
-## Try the latest / まず試せるもの
+## Start here / まず試せるもの
 
-**Veripsa Core → local MCP（試作）** — Rustを変更する前に、同じTauriコマンドにつながるTypeScriptの確認先と曖昧さを調べる2ツールです。固定snapshotを使う、読み取り専用の実験です。公式Tauri例のsnapshotをCodex CLIから照会し、解析が不完全な状態も保持することを確認しました。
+**Veripsa Core — コードの構造とGit履歴を、一緒に確かめる。**
 
-[コード・実行手順](https://github.com/RollNuts/zenn-content/tree/89fe0fe12258c827a9e7fc54cb12fc96401018de/examples/core-local-mcp) · [日本語の解説（GitHub全文／Zenn公開待ち）](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md)
+頻繁なGitコンフリクトを減らしたくて作り始めた仕組みから、コードグラフ・Co-change・永続化の技術が生まれました。今は、他の開発者が手元で試し、結果と限界を検証できる公開資産として整えています。
+
+[無料のローカルデモ](https://github.com/RollNuts/veripsa/tree/main/examples/structural-overlap) · [日本語ガイド](https://github.com/RollNuts/veripsa/blob/main/docs/README.ja.md) · [解析基盤とDBの役割](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md)
+
+Gitのclean merge、コードグラフ、履歴上の関連、統合後の実行を4つの合成例で比較します。POSIX環境のGit＋Python 3.12で動き、追加パッケージ・モデルAPI・DBは不要です。ホスト型GitHub Appは停止中です。
 
 ## Main projects / 主なプロジェクト
 
 | Project | What you can explore | Current status |
 | --- | --- | --- |
-| [Veripsa Core](https://github.com/RollNuts/veripsa) | Content-free PR traffic control: structural references and decision state, without retained source or diff bodies. [Design boundary](https://github.com/RollNuts/veripsa/blob/main/docs/PRODUCT_FACTS.md#f-013-content-free-storage-boundary) · [Try local evaluation](https://github.com/RollNuts/veripsa/blob/main/docs/OFFLINE_EXAMPLE.md) · [日本語の再現手順](https://note.com/rollnuts/n/n8e700225687d). | Source-available; hosted GitHub App is suspended. |
+| [Veripsa Core](https://github.com/RollNuts/veripsa) | Code graph, historical co-change, and durable PR coordination. [Local demo](https://github.com/RollNuts/veripsa/tree/main/examples/structural-overlap) · [Implementation inventory](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md) · [Pinned Flask evaluation](https://github.com/RollNuts/veripsa/blob/main/docs/OFFLINE_EXAMPLE.md). | Source-available; hosted GitHub App is suspended. |
 | [Mihassei News / 未発生新聞](https://github.com/RollNuts/mihassei-news) | A fictional satire newspaper built with Python, static pages, and Cloudflare Workers. [Read it](https://veripsa.com) or build it locally. | Active project; local build needs no API credentials. |
+
+## Agent integration / AIから使う実験
+
+[Core → local MCP / Codex](https://github.com/RollNuts/zenn-content/tree/89fe0fe12258c827a9e7fc54cb12fc96401018de/examples/core-local-mcp) — a separate read-only adapter for a saved Tauri snapshot. SDK-only reproduction is model-free; optional Codex execution uses the signed-in account's allowance. [日本語の解説（GitHub全文／Zenn公開待ち）](https://github.com/RollNuts/zenn-content/blob/main/articles/tauri-command-contract-graph.md).
 
 ## Technical writing / 技術記事
 
