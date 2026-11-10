@@ -6,19 +6,31 @@ AIと進めた個人開発を、実行できるコード・検証記録・技術
 
 ## Start here / まず試せるもの
 
-**Veripsa Core — コードの構造とGit履歴を、一緒に確かめる。**
+**このファイルを変える前に、どこを読む？ — Veripsa Core**
 
-頻繁なGitコンフリクトを減らしたくて作り始めた仕組みから、コードグラフ・Co-change・永続化の技術が生まれました。今は、他の開発者が手元で試し、結果と限界を検証できる公開資産として整えています。
+手元のファイルを起点に、コード構造とGit履歴から、変更前に読む関連ファイルの候補を探すローカルCLIです。静的な関係と過去の共変更を別々に返します。
 
-[無料のローカルデモ](https://github.com/RollNuts/veripsa/tree/main/examples/structural-overlap) · [日本語ガイド](https://github.com/RollNuts/veripsa/blob/main/docs/README.ja.md) · [解析基盤とDBの役割](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md)
+[自分のrepoで試す手順 / Local file review](https://github.com/RollNuts/veripsa/blob/main/docs/LOCAL_FILE_REVIEW.md) · [日本語ガイド](https://github.com/RollNuts/veripsa/blob/main/docs/README.ja.md)
 
-Gitのclean merge、コードグラフ、履歴上の関連、統合後の実行を4つの合成例で比較します。POSIX環境のGit＋Python 3.12で動き、追加パッケージ・モデルAPI・DBは不要です。ホスト型GitHub Appは停止中です。
+新しい作業用ディレクトリで、まずCore自身を調べられます。
+
+```sh
+git clone https://github.com/RollNuts/veripsa.git
+cd veripsa
+python3.12 -B -m tools.review_file . _cg_cochange.py
+```
+
+自分のrepoでは、最後の2引数をGitルートと相対ファイル名へ置き換えます。POSIX環境のGit＋Python 3.12が必要で、Python入力なら追加パッケージ・DB・モデルAPI・アカウントは不要です。対象コードは実行しません。候補には誤りや欠落があり、空でも安全の証明にはなりません。出力のパス等は共有前に確認してください。
+
+頻繁なGitコンフリクトを減らしたくて作り始めた仕組みから、コードグラフ・Co-change・永続化の技術が生まれました。[4つの合成例](https://github.com/RollNuts/veripsa/tree/main/examples/structural-overlap)では、Gitのclean merge、構造と履歴の関連、統合後の実行を比較できます。[解析基盤とDBの役割](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md)も公開しています。
+
+ライセンスは[BSL 1.1 / source-available](https://github.com/RollNuts/veripsa/blob/main/LICENSE)です。ホスト型GitHub Appは停止中です。
 
 ## Main projects / 主なプロジェクト
 
 | Project | What you can explore | Current status |
 | --- | --- | --- |
-| [Veripsa Core](https://github.com/RollNuts/veripsa) | Code graph, historical co-change, and durable PR coordination. [Local demo](https://github.com/RollNuts/veripsa/tree/main/examples/structural-overlap) · [Implementation inventory](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md) · [Pinned Flask evaluation](https://github.com/RollNuts/veripsa/blob/main/docs/OFFLINE_EXAMPLE.md). | Source-available; hosted GitHub App is suspended. |
+| [Veripsa Core](https://github.com/RollNuts/veripsa) | Code graph, historical co-change, and durable PR coordination. [Review your own file](https://github.com/RollNuts/veripsa/blob/main/docs/LOCAL_FILE_REVIEW.md) · [Implementation inventory](https://github.com/RollNuts/veripsa/blob/main/docs/ANALYSIS_ASSETS.md) · [Pinned Flask evaluation](https://github.com/RollNuts/veripsa/blob/main/docs/OFFLINE_EXAMPLE.md). | Source-available; hosted GitHub App is suspended. |
 | [Mihassei News / 未発生新聞](https://github.com/RollNuts/mihassei-news) | A fictional satire newspaper built with Python, static pages, and Cloudflare Workers. [Read it](https://veripsa.com) or build it locally. | Active project; local build needs no API credentials. |
 
 ## Agent integration / AIから使う実験
