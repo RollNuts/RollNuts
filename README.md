@@ -26,6 +26,12 @@ python3.12 -B -m tools.review_file . _cg_cochange.py
 
 ライセンスは[BSL 1.1 / source-available](https://github.com/RollNuts/veripsa/blob/main/LICENSE)です。ホスト型GitHub Appは停止中です。
 
+**テストは通る。でも、その修正を採っていい？ — Python 1ファイル教材**
+
+[説明と実行手順](https://github.com/RollNuts/zenn-content/tree/main/examples/api-contract-repair) · [repair_review.py](https://github.com/RollNuts/zenn-content/blob/main/examples/api-contract-repair/repair_review.py) — 架空の2修正案で、戻り値の一致とAPIの要件を守ることの違いを確かめます。Python 3.12標準ライブラリだけで動き、ファイル取得後の実行にGit・Core・モデル・DB・アカウントは不要です。
+
+値だけの検査は両案成功。全4検査では `rollback` の2件FAILが期待結果で、`keyword` は4件成功します。
+
 ## Main projects / 主なプロジェクト
 
 | Project | What you can explore | Current status |
