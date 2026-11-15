@@ -1,16 +1,23 @@
 # RollNuts
 
-I use AI-assisted development to turn practical problems into developer tools, runnable examples, and inspectable technical notes.
+AIを使って、個人でソフトウェアを作っています。5年後にありそうな出来事を新聞にする[未発生新聞](https://veripsa.com)と、コードを変える前に関連ファイルを探す[Veripsa Core](https://github.com/RollNuts/veripsa)を作っています。
 
-AIと進めた個人開発を、実行できるコード・検証記録・技術記事として残しています。
+## AIで何かを作っていて、こんなときは
 
-## Start here / まず試せるもの
+**AIに頼んだ修正、答えが合っていれば採用していい？**
 
-**このファイルを変える前に、どこを読む？ — Veripsa Core**
+小さな会計プログラムを直す二択問題です。どちらの案でも、手数料を足した合計は105。頼んだ条件まで守っているのはどちらでしょう。選んだら、その場で答えを開けます。[GitHubで二択を試す](https://github.com/RollNuts/zenn-content/tree/main/examples/api-contract-repair)
 
-手元のファイルを起点に、コード構造とGit履歴から、変更前に読む関連ファイルの候補を探すローカルCLIです。静的な関係と過去の共変更を別々に返します。
+**サイトを更新したのに、古い画面が出てくる。どこを確かめる？**
 
-[自分のrepoで試す手順 / Local file review](https://github.com/RollNuts/veripsa/blob/main/docs/LOCAL_FILE_REVIEW.md) · [日本語ガイド](https://github.com/RollNuts/veripsa/blob/main/docs/README.ja.md)
+公開先に小さな目印を置き、古い版が届いているのか、一部だけが入れ替わったのかを見分ける例です。[Zennで確かめ方を読む](https://zenn.dev/veripsa/articles/ci-success-deployed-revision)
+
+**AIにファイルの修正を頼む前に、ほかのどこを一緒に読んでもらう？**
+
+Veripsa Coreで、コードのつながりと過去に一緒に変わった履歴から、次に読むファイルの候補を出せます。[自分のリポジトリで試す](https://github.com/RollNuts/veripsa/blob/main/docs/LOCAL_FILE_REVIEW.md) · [日本語ガイド](https://github.com/RollNuts/veripsa/blob/main/docs/README.ja.md)
+
+<details>
+<summary>Veripsa Coreの実行コマンドと利用条件</summary>
 
 新しい作業用ディレクトリで、まずCore自身を調べられます。
 
@@ -26,11 +33,7 @@ python3.12 -B -m tools.review_file . _cg_cochange.py
 
 ライセンスは[BSL 1.1 / source-available](https://github.com/RollNuts/veripsa/blob/main/LICENSE)です。ホスト型GitHub Appは停止中です。
 
-**テストは通る。でも、その修正を採っていい？ — Python 1ファイル教材**
-
-[説明と実行手順](https://github.com/RollNuts/zenn-content/tree/main/examples/api-contract-repair) · [repair_review.py](https://github.com/RollNuts/zenn-content/blob/main/examples/api-contract-repair/repair_review.py) — 架空の2修正案で、戻り値の一致とAPIの要件を守ることの違いを確かめます。Python 3.12標準ライブラリだけで動き、ファイル取得後の実行にGit・Core・モデル・DB・アカウントは不要です。
-
-値だけの検査は両案成功。全4検査では `rollback` の2件FAILが期待結果で、`keyword` は4件成功します。
+</details>
 
 ## Main projects / 主なプロジェクト
 
