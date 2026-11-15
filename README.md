@@ -49,9 +49,9 @@ python3.12 -B -m tools.review_file . _cg_cochange.py
 
 [記事の更新をRSSで購読 / Subscribe via RSS](https://zenn.dev/veripsa/feed)
 
-- [Gitでマージできたのに壊れる――コードグラフとCo-changeを4例で検証](https://zenn.dev/veripsa/articles/graph-cochange-review-benchmark) — 4つの合成例を、手元で実マージ・実行・採点する。
-- [git branch --mergedに出ない取り込み済みブランチを見分ける――556本を整理した実例](https://zenn.dev/veripsa/articles/github-branch-cleanup-squash-556)
-- [創作上の2031年をRSSに流さない――静的サイトで3つの日時を分ける](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site)
+- [この修正、ほかにどこを確認する？ コードのつながりとGit履歴を4例で比べた](https://zenn.dev/veripsa/articles/graph-cochange-review-benchmark) — 4つの合成例を、手元で実マージ・実行・採点する。
+- [このブランチ、もう消していい？ GitHubで556本を調べて103本を残した理由](https://zenn.dev/veripsa/articles/github-branch-cleanup-squash-556)
+- [5年後の新聞を今日公開する。RSSにはいつの日付を載せる？](https://zenn.dev/veripsa/articles/fiction-date-rss-static-site)
 - [Article sources](https://github.com/RollNuts/zenn-content) — maintained through Zenn's GitHub integration.
 
 ## Reference repositories / 検証・参照用
